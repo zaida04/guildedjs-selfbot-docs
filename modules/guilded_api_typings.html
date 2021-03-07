@@ -231,19 +231,34 @@
 				<a href="#guildedjsguilded-api-typings" id="guildedjsguilded-api-typings" style="color: inherit; text-decoration: none;">
 					<h1><code>@guildedjs/guilded-api-typings</code></h1>
 				</a>
-				<ul>
-					<li>Typings for the Guilded API. Free to use in any project that requires the API Typings</li>
-				</ul>
+				<p><a href="https://github.com/guildedjs/guilded.js/blob/master/LICENSE"><img src="https://img.shields.io/github/license/guildedjs/guilded.js" alt="GitHub"></a>
+					<a href="https://www.npmjs.com/package/@guildedjs/guilded-api-typings"><img src="https://img.shields.io/npm/v/@guildedjs/guilded-api-typings?color=crimson&logo=npm" alt="npm"></a>
+				<a href="https://github.com/guildedjs/guilded.js/actions/workflows/typescript.yml"><img src="https://github.com/guildedjs/guilded.js/actions/workflows/typescript.yml/badge.svg" alt="TypeScript"></a></p>
+				<p>TypeScript Typings for the Guilded.gg API.</p>
+				<blockquote>
+					<p>⚠️ If you intend to use <code>@guildedjs/guilded.js</code> you won&#39;t need to install this, as it&#39;s already a dependency of that package.</p>
+				</blockquote>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-					<h1>Installation</h1>
+					<h2>Installation</h2>
 				</a>
-				<p><code>npm install @guildedjs/guilded-api-typings</code></p>
-				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-					<h1>Documentation</h1>
+				<ul>
+					<li><code>npm install @guildedjs/guilded-api-typings</code>  </li>
+					<li><code>yarn add @guildedjs/guilded-api-typings</code></li>
+				</ul>
+				<a href="#structure" id="structure" style="color: inherit; text-decoration: none;">
+					<h2>Structure</h2>
 				</a>
-				<p>Documentation is located at <a href="">here</a></p>
+				<ul>
+					<li><code>lib/rest</code> - Response from REST reqs to the API</li>
+					<li><code>lib/ws</code> - Payloads from the WS Gateway</li>
+					<li><code>lib/common</code> - Common structures that may be sent by either WS or REST</li>
+				</ul>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<p>Please see the main <a href="https://github.com/guildedjs/guilded.js">README.md</a> for info on how to contribute to this package or the other <code>@guildedjs</code> packages.</p>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
-					<h1>LICENSE</h1>
+					<h2>LICENSE</h2>
 				</a>
 				<p>Licensed under the <a href="https://github.com/guildedjs/guildedjs/blob/master/LICENSE">MIT License</a></p>
 			</div>
@@ -328,7 +343,7 @@
 				<div class="tsd-signature tsd-kind-icon">APICategory<wbr>Channel<wbr>Role<wbr>Overwrite<span class="tsd-signature-symbol">:</span> <a href="../interfaces/guilded_api_typings.apiroleoverwrite.html" class="tsd-signature-type">APIRoleOverwrite</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded-api-typings/lib/common/structures/Overwrite.ts#L22">packages/guilded-api-typings/lib/common/structures/Overwrite.ts:22</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded-api-typings/lib/common/structures/Overwrite.ts#L22">packages/guilded-api-typings/lib/common/structures/Overwrite.ts:22</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -338,7 +353,7 @@
 				<div class="tsd-signature tsd-kind-icon">APIContent<wbr>Message<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"block"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"text"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded-api-typings/lib/common/structures/Message.ts#L54">packages/guilded-api-typings/lib/common/structures/Message.ts:54</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded-api-typings/lib/common/structures/Message.ts#L54">packages/guilded-api-typings/lib/common/structures/Message.ts:54</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -348,7 +363,7 @@
 				<div class="tsd-signature tsd-kind-icon">APITeam<wbr>Channel<wbr>Role<wbr>Overwrite<span class="tsd-signature-symbol">:</span> <a href="../interfaces/guilded_api_typings.apiroleoverwrite.html" class="tsd-signature-type">APIRoleOverwrite</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded-api-typings/lib/common/structures/Overwrite.ts#L24">packages/guilded-api-typings/lib/common/structures/Overwrite.ts:24</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded-api-typings/lib/common/structures/Overwrite.ts#L24">packages/guilded-api-typings/lib/common/structures/Overwrite.ts:24</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -358,7 +373,7 @@
 				<div class="tsd-signature tsd-kind-icon">APIUser<wbr>Overwrite<span class="tsd-signature-symbol">:</span> <a href="../interfaces/guilded_api_typings.apiroleoverwrite.html" class="tsd-signature-type">APIRoleOverwrite</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded-api-typings/lib/common/structures/Overwrite.ts#L20">packages/guilded-api-typings/lib/common/structures/Overwrite.ts:20</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded-api-typings/lib/common/structures/Overwrite.ts#L20">packages/guilded-api-typings/lib/common/structures/Overwrite.ts:20</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -368,7 +383,7 @@
 				<div class="tsd-signature tsd-kind-icon">Document<wbr>Node<wbr>Message<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"code-container"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"paragraph"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded-api-typings/lib/common/structures/Message.ts#L55">packages/guilded-api-typings/lib/common/structures/Message.ts:55</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded-api-typings/lib/common/structures/Message.ts#L55">packages/guilded-api-typings/lib/common/structures/Message.ts:55</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -378,7 +393,7 @@
 				<div class="tsd-signature tsd-kind-icon">Membership<wbr>Role<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"member"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"admin"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"formerMember"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded-api-typings/lib/common/structures/Role.ts#L24">packages/guilded-api-typings/lib/common/structures/Role.ts:24</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded-api-typings/lib/common/structures/Role.ts#L24">packages/guilded-api-typings/lib/common/structures/Role.ts:24</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -388,7 +403,7 @@
 				<div class="tsd-signature tsd-kind-icon">Social<wbr>Link<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"bnet"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"discord"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"psn"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"steam"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"switch"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"twitch"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"twitter"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"xbox"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"youtube"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded-api-typings/lib/common/structures/Member.ts#L36">packages/guilded-api-typings/lib/common/structures/Member.ts:36</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded-api-typings/lib/common/structures/Member.ts#L36">packages/guilded-api-typings/lib/common/structures/Member.ts:36</a></li>
 					</ul>
 				</aside>
 			</section>

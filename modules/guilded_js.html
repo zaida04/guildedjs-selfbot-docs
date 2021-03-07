@@ -373,7 +373,7 @@
 				<li class=" tsd-kind-function tsd-parent-kind-module">
 					<a href="guilded_js.html#resolvecolor" class="tsd-kind-icon">resolve<wbr>Color</a>
 				</li>
-				<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+				<li class=" tsd-kind-function tsd-parent-kind-module">
 					<a href="guilded_js.html#sleep" class="tsd-kind-icon">sleep</a>
 				</li>
 				<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -400,139 +400,6 @@
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-comment">
-			<div class="tsd-comment tsd-typography">
-				<blockquote>
-					<a href="#⚠️-this-project-is-in-an-alpha-stage-be-weary-of-bugs" id="⚠️-this-project-is-in-an-alpha-stage-be-weary-of-bugs" style="color: inherit; text-decoration: none;">
-						<h3>⚠️ This project is in an Alpha stage, be weary of bugs.</h3>
-					</a>
-				</blockquote>
-				<div align="center">
-					<img src="media/readme-header.png" width="546" alt="guildedjs"/>
-					<p><b>Tools for interacting with the <a href="https://www.guilded.gg/">Guilded.gg</a> API. <br>Written in TS</b></p>
-					<p><a href="https://discord.gg/jf66UUN"><b>Join our Discord Server!</b></a> > <a href="https://guilded.js.org"><b>Documentation</b></a></p>
-					<br />
-					<p>
-						<img src="https://github.com/guildedjs/guilded.js/workflows/Linting/badge.svg" alt="Linting">
-						<img src="https://github.com/guildedjs/guilded.js/workflows/TypeScript/badge.svg" alt="TypeScript">
-						<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-						<a href="https://github.com/guildedjs/guilded.js/issues"><img src="https://img.shields.io/github/issues-raw/guildedjs/guilded.js.svg?maxAge=25000" alt="Issues"></a>
-						<a href="https://github.com/guildedjs/guilded.js/pulls"><img src="https://img.shields.io/github/issues-pr/guildedjs/guilded.js.svg?style=flat" alt="GitHub pull requests"></a><br>
-						<a href="https://npmjs.org/package/@guildedjs/guilded.js"><img src="https://nodei.co/npm/@guildedjs/guilded.js.png" alt="NPM"></a>
-					</p>
-				</div>
-				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
-					<h2>Table of Contents</h2>
-				</a>
-				<ul>
-					<li><a href="#usage">Example Usage</a></li>
-					<li><a href="#about">About the Project</a></li>
-					<li><a href="#packages">Packages</a></li>
-					<li><a href="#getting-started">Getting Started</a><ul>
-							<li><a href="#prerequisites">Prerequisites</a></li>
-							<li><a href="#installation">Installation</a></li>
-							<li><a href="#documentation">Documentation</a></li>
-						</ul>
-					</li>
-					<li><a href="#contributing">Contributing</a></li>
-					<li><a href="#LICENSING">License</a></li>
-				</ul>
-				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-					<h2>Usage</h2>
-				</a>
-				<pre><code class="language-ts"><span class="hljs-comment">// commonJS:</span>
-<span class="hljs-keyword">const</span> { Client } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;@guildedjs/guilded.js&quot;</span>);
-
-<span class="hljs-comment">/*
- * ES6:
- * import { Client } from &quot;@guildedjs/guilded.js&quot;;
- */</span>
-
-<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client();
-
-client.on(<span class="hljs-string">&#x27;ready&#x27;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Bot is successfully logged in`</span>));
-
-client.on(<span class="hljs-string">&quot;messageCreate&quot;</span>, <span class="hljs-function"><span class="hljs-params">message</span> =&gt;</span> {
-    <span class="hljs-keyword">if</span>(message.content === <span class="hljs-string">&quot;poggers&quot;</span>) {
-        <span class="hljs-keyword">return</span> message.channel.send(<span class="hljs-string">&quot;poggers indeed&quot;</span>);
-    }
-})
-
-client.login({
-    <span class="hljs-attr">email</span>: <span class="hljs-string">&quot;email&quot;</span>,
-    <span class="hljs-attr">password</span>: <span class="hljs-string">&quot;password&quot;</span>
-});</code></pre>
-				<!--ABOUT THE PROJECT-->
-				<a href="#about" id="about" style="color: inherit; text-decoration: none;">
-					<h2>About</h2>
-				</a>
-				<p>This repo serves as a monorepo that houses several packages, mainly the <code>@guildedjs/guilded.js</code> package, which is a library for the Guilded API. Inspired heavily by <a href="https://github.com/discordjs/discord.js">discord.js</a></p>
-				<!--EMD OF ABOUT THE PROJECT>
-
-<!--GETTING STARTED-->
-				<a href="#packages" id="packages" style="color: inherit; text-decoration: none;">
-					<h2>Packages</h2>
-				</a>
-				<ul>
-					<li><a href="https://github.com/guildedjs/guildedjs/tree/master/packages/guilded.js#readme"><code>@guildedjs/guilded.js</code></a> - main package that provides a lib for the guilded.gg api. Comes with built in caching, structures, etc.</li>
-					<li><a href="https://github.com/guildedjs/guildedjs/tree/master/packages/itami#readme"><code>@guildedjs/itami</code></a> - official framework for <code>@guildedjs/guilded.js</code>, comes with highly customizable commands, listeners, and other abstractions.</li>
-					<li><a href="https://github.com/guildedjs/guildedjs/tree/master/packages/guilded-api-typings#readme"><code>@guildedjs/guilded-api-types</code></a> - thinking of making your own guilded lib/wrapper? This package consists of typings for the guilded.gg api compiled together by the community. No need to write your own typings and reinventing the wheel.</li>
-					<li><a href="https://github.com/guildedjs/guildedjs/tree/master/packages/rest#readme"><code>@guildedjs/guilded.js-rest</code></a> - Rest utility with (WIP) ratelimit handling. Free to use in your own lib for handling requests to the guilded.gg api</li>
-				</ul>
-				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
-					<h2>Getting Started</h2>
-				</a>
-				<a href="#prerequisites" id="prerequisites" style="color: inherit; text-decoration: none;">
-					<h3>Prerequisites</h3>
-				</a>
-				<p>You are expected to have a reasonably supported version of node.js. Guildedjs is tested on node.js &gt;12.0.0 and we make no guarantees that it will work on earlier versions</p>
-				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-					<h3>Installation</h3>
-				</a>
-				<p>NPM <code>(stable)</code></p>
-				<ul>
-					<li><code>npm install @guildedjs/guilded.js</code>  </li>
-				</ul>
-				<p>NPM <code>(master)</code></p>
-				<ul>
-					<li><code>npm install @guildedjs/guilded.js#master</code></li>
-				</ul>
-				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-					<h3>Documentation</h3>
-				</a>
-				<p>Documentation is viewable here: <a href="https://guilded.js.org">https://guilded.js.org</a></p>
-				<!--END GETTING STARTED-->
-				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
-					<h2>Contributing</h2>
-				</a>
-				<p>Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are <strong>greatly appreciated</strong>.</p>
-				<ol>
-					<li>Fork the Project</li>
-					<li>Create your Feature Branch (<code>git checkout -b feature/AmazingFeature</code>)</li>
-					<li>Commit your Changes (<code>git commit -m &#39;Add some AmazingFeature&#39;</code>)</li>
-					<li>Push to the Branch (<code>git push origin feature/AmazingFeature</code>)</li>
-					<li>Open a Pull Request</li>
-				</ol>
-				<p><strong>Please ensure your commits pass the tests, lints, and builds. This means you should test it locally before pushing.</strong></p>
-				<p><strong>We make use of <a href="https://lerna.js.org/">lerna</a> to manage our monorepo. The main commands used are below</strong></p>
-				<ul>
-					<li><code>lerna add &lt;module&gt; [--scope=package-name]</code> - add npm module dependency to all/specific package(s)</li>
-					<li><code>lerna create &lt;package&gt;</code> - create a new package</li>
-					<li><code>npm run bootstrap</code> = <code>lerna bootstrap</code> - recursively install dependencies in all packages and symlink local packages</li>
-					<li><code>lerna run &lt;npm-script&gt;</code> - recursively execute command in all packages (must exist in each packages package.json)</li>
-				</ul>
-				<a href="#acknowledgements" id="acknowledgements" style="color: inherit; text-decoration: none;">
-					<h2>Acknowledgements</h2>
-				</a>
-				<p><a href="https://github.com/discordjs/discord.js">Discord.js</a> - Caching strategy and overall layout</p>
-				<a href="#licensing" id="licensing" style="color: inherit; text-decoration: none;">
-					<h2>LICENSING</h2>
-				</a>
-				<blockquote>
-					<p><strong>guildedjs</strong> © <a href="https://github.com/zaida04">zaida04</a>, Released under the <a href="https://github.com/guildedjs/guildedjs/blob/master/LICENSE">MIT</a> License.  </p>
-				</blockquote>
-			</div>
-		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
@@ -668,7 +535,7 @@ client.login({
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="guilded_js.html#parsestringtomessage" class="tsd-kind-icon">parse<wbr>String<wbr>ToMessage</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-module"><a href="guilded_js.html#resolvecolor" class="tsd-kind-icon">resolve<wbr>Color</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="guilded_js.html#sleep" class="tsd-kind-icon">sleep</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="guilded_js.html#sleep" class="tsd-kind-icon">sleep</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="guilded_js.html#sleep-1" class="tsd-kind-icon">sleep</a></li>
 						</ul>
 					</section>
@@ -731,7 +598,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">CHANNEL_<wbr>TYPES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"chat"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"category"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/typings/ChannelTypes.ts#L1">packages/guilded.js/lib/typings/ChannelTypes.ts:1</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/typings/ChannelTypes.ts#L1">packages/guilded.js/lib/typings/ChannelTypes.ts:1</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -741,7 +608,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">Client<wbr>Partial<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"MEMBER"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"MESSAGE"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"USER"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/structures/Client.ts#L168">packages/guilded.js/lib/structures/Client.ts:168</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/structures/Client.ts#L163">packages/guilded.js/lib/structures/Client.ts:163</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -851,7 +718,7 @@ client.login({
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/MessageUtil.ts#L28">packages/guilded.js/lib/util/MessageUtil.ts:28</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/MessageUtil.ts#L28">packages/guilded.js/lib/util/MessageUtil.ts:28</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -895,7 +762,7 @@ client.login({
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/MessageUtil.ts#L257">packages/guilded.js/lib/util/MessageUtil.ts:257</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/MessageUtil.ts#L257">packages/guilded.js/lib/util/MessageUtil.ts:257</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -915,17 +782,17 @@ client.login({
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 				<a name="sleep" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> sleep</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 					<li class="tsd-signature tsd-kind-icon">sleep<span class="tsd-signature-symbol">(</span>ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/index.ts#L3">packages/guilded.js/lib/util/index.ts:3</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/index.ts#L1">packages/guilded.js/lib/util/index.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -970,7 +837,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">COLORS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L6">packages/guilded.js/lib/util/Consts.ts:6</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L6">packages/guilded.js/lib/util/Consts.ts:6</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -986,7 +853,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">AQUA<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1752220</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L9">packages/guilded.js/lib/util/Consts.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L9">packages/guilded.js/lib/util/Consts.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -996,7 +863,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">BLUE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3447003</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L11">packages/guilded.js/lib/util/Consts.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L11">packages/guilded.js/lib/util/Consts.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1006,7 +873,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">BLURPLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 7506394</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L32">packages/guilded.js/lib/util/Consts.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L32">packages/guilded.js/lib/util/Consts.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1016,7 +883,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARKER_<wbr>GREY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 8359053</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L29">packages/guilded.js/lib/util/Consts.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L29">packages/guilded.js/lib/util/Consts.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1026,7 +893,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>AQUA<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1146986</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L20">packages/guilded.js/lib/util/Consts.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L20">packages/guilded.js/lib/util/Consts.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1036,7 +903,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>BLUE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2123412</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L22">packages/guilded.js/lib/util/Consts.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L22">packages/guilded.js/lib/util/Consts.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1046,7 +913,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>BUT_<wbr>NOT_<wbr>BLACK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2895667</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L34">packages/guilded.js/lib/util/Consts.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L34">packages/guilded.js/lib/util/Consts.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1056,7 +923,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>GOLD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 12745742</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L25">packages/guilded.js/lib/util/Consts.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L25">packages/guilded.js/lib/util/Consts.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1066,7 +933,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>GREEN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2067276</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L21">packages/guilded.js/lib/util/Consts.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L21">packages/guilded.js/lib/util/Consts.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1076,7 +943,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>GREY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 9936031</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L28">packages/guilded.js/lib/util/Consts.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L28">packages/guilded.js/lib/util/Consts.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1086,7 +953,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>NAVY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2899536</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L31">packages/guilded.js/lib/util/Consts.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L31">packages/guilded.js/lib/util/Consts.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1096,7 +963,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>ORANGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 11027200</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L26">packages/guilded.js/lib/util/Consts.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L26">packages/guilded.js/lib/util/Consts.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1106,7 +973,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>PURPLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 7419530</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L23">packages/guilded.js/lib/util/Consts.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L23">packages/guilded.js/lib/util/Consts.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1116,7 +983,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>RED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10038562</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L27">packages/guilded.js/lib/util/Consts.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L27">packages/guilded.js/lib/util/Consts.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1126,7 +993,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DARK_<wbr>VIVID_<wbr>PINK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 11342935</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L24">packages/guilded.js/lib/util/Consts.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L24">packages/guilded.js/lib/util/Consts.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1136,7 +1003,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">DEFAULT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L7">packages/guilded.js/lib/util/Consts.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L7">packages/guilded.js/lib/util/Consts.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1146,7 +1013,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">GOLD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 15844367</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L15">packages/guilded.js/lib/util/Consts.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L15">packages/guilded.js/lib/util/Consts.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1156,7 +1023,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">GREEN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3066993</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L10">packages/guilded.js/lib/util/Consts.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L10">packages/guilded.js/lib/util/Consts.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1166,7 +1033,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">GREY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 9807270</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L18">packages/guilded.js/lib/util/Consts.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L18">packages/guilded.js/lib/util/Consts.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1176,7 +1043,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">GREYPLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10070709</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L33">packages/guilded.js/lib/util/Consts.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L33">packages/guilded.js/lib/util/Consts.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1186,7 +1053,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">LIGHT_<wbr>GREY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 12370112</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L30">packages/guilded.js/lib/util/Consts.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L30">packages/guilded.js/lib/util/Consts.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1196,7 +1063,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">LUMINOUS_<wbr>VIVID_<wbr>PINK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 15277667</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L14">packages/guilded.js/lib/util/Consts.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L14">packages/guilded.js/lib/util/Consts.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1206,7 +1073,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">NAVY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3426654</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L19">packages/guilded.js/lib/util/Consts.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L19">packages/guilded.js/lib/util/Consts.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1216,7 +1083,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">NOT_<wbr>QUITE_<wbr>BLACK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2303786</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L35">packages/guilded.js/lib/util/Consts.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L35">packages/guilded.js/lib/util/Consts.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1226,7 +1093,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">ORANGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 15105570</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L16">packages/guilded.js/lib/util/Consts.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L16">packages/guilded.js/lib/util/Consts.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1236,7 +1103,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">PURPLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10181046</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L13">packages/guilded.js/lib/util/Consts.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L13">packages/guilded.js/lib/util/Consts.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1246,7 +1113,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">RED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 15158332</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L17">packages/guilded.js/lib/util/Consts.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L17">packages/guilded.js/lib/util/Consts.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1256,7 +1123,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">WHITE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 16777215</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L8">packages/guilded.js/lib/util/Consts.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L8">packages/guilded.js/lib/util/Consts.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1266,7 +1133,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">YELLOW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 16776960</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L12">packages/guilded.js/lib/util/Consts.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L12">packages/guilded.js/lib/util/Consts.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1277,7 +1144,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">CONSTANTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L38">packages/guilded.js/lib/util/Consts.ts:38</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L38">packages/guilded.js/lib/util/Consts.ts:38</a></li>
 					</ul>
 				</aside>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -1286,7 +1153,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">COLORS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/util/Consts.ts#L38">packages/guilded.js/lib/util/Consts.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/util/Consts.ts#L38">packages/guilded.js/lib/util/Consts.ts:38</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1305,7 +1172,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">PRECENSES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/structures/ClientUser.ts#L62">packages/guilded.js/lib/structures/ClientUser.ts:62</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/structures/ClientUser.ts#L62">packages/guilded.js/lib/structures/ClientUser.ts:62</a></li>
 					</ul>
 				</aside>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -1314,7 +1181,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">dnd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/structures/ClientUser.ts#L65">packages/guilded.js/lib/structures/ClientUser.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/structures/ClientUser.ts#L65">packages/guilded.js/lib/structures/ClientUser.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1324,7 +1191,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">idle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/structures/ClientUser.ts#L64">packages/guilded.js/lib/structures/ClientUser.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/structures/ClientUser.ts#L64">packages/guilded.js/lib/structures/ClientUser.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1334,7 +1201,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">invisible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/structures/ClientUser.ts#L66">packages/guilded.js/lib/structures/ClientUser.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/structures/ClientUser.ts#L66">packages/guilded.js/lib/structures/ClientUser.ts:66</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1344,7 +1211,7 @@ client.login({
 					<div class="tsd-signature tsd-kind-icon">online<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/8b31dff/packages/guilded.js/lib/structures/ClientUser.ts#L63">packages/guilded.js/lib/structures/ClientUser.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/09f2223/packages/guilded.js/lib/structures/ClientUser.ts#L63">packages/guilded.js/lib/structures/ClientUser.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
