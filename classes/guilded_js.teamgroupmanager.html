@@ -59,6 +59,9 @@
 							<a href="guilded_js.teamgroupmanager.html#cache" class="tsd-kind-icon">cache</a>
 						</li>
 						<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+							<a href="guilded_js.teamgroupmanager.html#cacheoptions" class="tsd-kind-icon">cache<wbr>Options</a>
+						</li>
+						<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 							<a href="guilded_js.teamgroupmanager.html#client" class="tsd-kind-icon">client</a>
 						</li>
 						<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -76,9 +79,6 @@
 		</li>
 		<li class=" tsd-kind-module">
 			<a href="../modules/itami.html" class="tsd-kind-icon">itami</a>
-		</li>
-		<li class=" tsd-kind-module">
-			<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
 		</li>
 	</ul>
 </nav>
@@ -111,6 +111,7 @@
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.teamgroupmanager.html#cache" class="tsd-kind-icon">cache</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.teamgroupmanager.html#cacheoptions" class="tsd-kind-icon">cache<wbr>Options</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.teamgroupmanager.html#client" class="tsd-kind-icon">client</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.teamgroupmanager.html#holds" class="tsd-kind-icon">holds</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.teamgroupmanager.html#team" class="tsd-kind-icon">team</a></li>
@@ -138,7 +139,7 @@
 						<aside class="tsd-sources">
 							<p>Overrides <a href="guilded_js.basemanager.html">BaseManager</a>.<a href="guilded_js.basemanager.html#constructor">constructor</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/managers/TeamGroupManager.ts#L8">packages/guilded.js/lib/structures/managers/TeamGroupManager.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/managers/TeamGroupManager.ts#L8">packages/guilded.js/lib/structures/managers/TeamGroupManager.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -160,11 +161,22 @@
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 				<a name="cache" class="tsd-anchor"></a>
 				<h3>cache</h3>
-				<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="guilded_js.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Collection()</span></div>
+				<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <a href="guilded_js.cachecollection.html" class="tsd-signature-type">CacheCollection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="guilded_js.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new CacheCollection(this.cacheOptions ?? {})</span></div>
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.basemanager.html">BaseManager</a>.<a href="guilded_js.basemanager.html#cache">cache</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/managers/BaseManager.ts#L14">packages/guilded.js/lib/structures/managers/BaseManager.ts:14</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/managers/BaseManager.ts#L12">packages/guilded.js/lib/structures/managers/BaseManager.ts:12</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+				<a name="cacheoptions" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> cache<wbr>Options</h3>
+				<div class="tsd-signature tsd-kind-icon">cache<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/guilded_js.cachecollectionoptions.html" class="tsd-signature-type">CacheCollectionOptions</a></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="guilded_js.basemanager.html">BaseManager</a>.<a href="guilded_js.basemanager.html#cacheoptions">cacheOptions</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/managers/BaseManager.ts#L13">packages/guilded.js/lib/structures/managers/BaseManager.ts:13</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -175,7 +187,7 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.basemanager.html">BaseManager</a>.<a href="guilded_js.basemanager.html#client">client</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/managers/BaseManager.ts#L15">packages/guilded.js/lib/structures/managers/BaseManager.ts:15</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/managers/BaseManager.ts#L13">packages/guilded.js/lib/structures/managers/BaseManager.ts:13</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -186,7 +198,7 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.basemanager.html">BaseManager</a>.<a href="guilded_js.basemanager.html#holds">holds</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/managers/BaseManager.ts#L15">packages/guilded.js/lib/structures/managers/BaseManager.ts:15</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/managers/BaseManager.ts#L13">packages/guilded.js/lib/structures/managers/BaseManager.ts:13</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -196,7 +208,7 @@
 				<div class="tsd-signature tsd-kind-icon">team<span class="tsd-signature-symbol">:</span> <a href="guilded_js.team.html" class="tsd-signature-type">Team</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/managers/TeamGroupManager.ts#L9">packages/guilded.js/lib/structures/managers/TeamGroupManager.ts:9</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/managers/TeamGroupManager.ts#L9">packages/guilded.js/lib/structures/managers/TeamGroupManager.ts:9</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -214,7 +226,7 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.basemanager.html">BaseManager</a>.<a href="guilded_js.basemanager.html#add">add</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/managers/BaseManager.ts#L21">packages/guilded.js/lib/structures/managers/BaseManager.ts:21</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/managers/BaseManager.ts#L19">packages/guilded.js/lib/structures/managers/BaseManager.ts:19</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -248,6 +260,9 @@
 						<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 						<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 						<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+					</ul>
+					<ul class="tsd-legend">
+						<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>

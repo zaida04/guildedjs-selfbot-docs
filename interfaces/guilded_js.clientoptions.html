@@ -71,9 +71,6 @@
 		<li class=" tsd-kind-module">
 			<a href="../modules/itami.html" class="tsd-kind-icon">itami</a>
 		</li>
-		<li class=" tsd-kind-module">
-			<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
-		</li>
 	</ul>
 </nav>
 <div class="container container-main">
@@ -114,40 +111,87 @@
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="cache" class="tsd-anchor"></a>
 				<h3>cache</h3>
-				<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>channels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>members<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>startupRestrictions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>channels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>dms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>teams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>teams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>users<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></div>
+				<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cacheMaxSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>channelsCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>groupsCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>memberRolesCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>membersCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>messagesCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>teamRolesCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>teamWebhooksCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>teamsCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>usersCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>disableChannels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disableGroups<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disableMembers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disableMembersRoles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disableMessages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disableTeam<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disableTeamRoles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disableUsers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disableWebhooks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>startupRestrictions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dropChannels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>dropDMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>dropTeams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/Client.ts#L170">packages/guilded.js/lib/structures/Client.ts:170</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/Client.ts#L205">packages/guilded.js/lib/structures/Client.ts:205</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
 					<h4>Type declaration</h4>
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter">
-							<h5>channels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-						</li>
-						<li class="tsd-parameter">
-							<h5>members<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-						</li>
-						<li class="tsd-parameter">
-							<h5>startup<wbr>Restrictions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>channels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>dms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>teams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+							<h5>cache<wbr>Max<wbr>Size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>channelsCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>groupsCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>memberRolesCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>membersCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>messagesCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>teamRolesCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>teamWebhooksCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>teamsCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>usersCache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
-									<h5>channels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									<h5>channels<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5>dms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									<h5>groups<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5>teams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									<h5>member<wbr>Roles<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>members<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>messages<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>team<wbr>Roles<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>team<wbr>Webhooks<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>teams<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>users<wbr>Cache<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 						</li>
 						<li class="tsd-parameter">
-							<h5>teams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							<h5>disable<wbr>Channels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
 						</li>
 						<li class="tsd-parameter">
-							<h5>users<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							<h5>disable<wbr>Groups<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>disable<wbr>Members<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>disable<wbr>Members<wbr>Roles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>disable<wbr>Messages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>disable<wbr>Team<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>disable<wbr>Team<wbr>Roles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>disable<wbr>Users<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>disable<wbr>Webhooks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>startup<wbr>Restrictions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dropChannels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>dropDMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>dropTeams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>drop<wbr>Channels<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>dropDMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>drop<wbr>Teams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>
@@ -158,17 +202,17 @@
 				<div class="tsd-signature tsd-kind-icon">partials<span class="tsd-signature-symbol">:</span> <a href="../modules/guilded_js.html#clientpartial" class="tsd-signature-type">ClientPartial</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/Client.ts#L169">packages/guilded.js/lib/structures/Client.ts:169</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/Client.ts#L204">packages/guilded.js/lib/structures/Client.ts:204</a></li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="rest" class="tsd-anchor"></a>
 				<h3>rest</h3>
-				<div class="tsd-signature tsd-kind-icon">rest<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>apiURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+				<div class="tsd-signature tsd-kind-icon">rest<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>apiURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>cdnURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/Client.ts#L187">packages/guilded.js/lib/structures/Client.ts:187</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/Client.ts#L239">packages/guilded.js/lib/structures/Client.ts:239</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -177,21 +221,27 @@
 						<li class="tsd-parameter">
 							<h5>apiURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 						</li>
+						<li class="tsd-parameter">
+							<h5>cdnURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+						</li>
 					</ul>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="ws" class="tsd-anchor"></a>
 				<h3>ws</h3>
-				<div class="tsd-signature tsd-kind-icon">ws<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>disabledEvents<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketEvents</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>disallowReconnect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>heartbeatInterval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>reconnectLimit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
+				<div class="tsd-signature tsd-kind-icon">ws<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>blockTeamWSConnection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>disabledEvents<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketEvents</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>disallowReconnect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>heartbeatInterval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>reconnectLimit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/Client.ts#L181">packages/guilded.js/lib/structures/Client.ts:181</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/Client.ts#L232">packages/guilded.js/lib/structures/Client.ts:232</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
 					<h4>Type declaration</h4>
 					<ul class="tsd-parameters">
+						<li class="tsd-parameter">
+							<h5>block<wbr>TeamWSConnection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+						</li>
 						<li class="tsd-parameter">
 							<h5>disabled<wbr>Events<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketEvents</span><span class="tsd-signature-symbol">[]</span></h5>
 						</li>
@@ -225,6 +275,9 @@
 					<ul class="tsd-legend">
 						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 						<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+					</ul>
+					<ul class="tsd-legend">
+						<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 					</ul>
 				</div>
 			</div>

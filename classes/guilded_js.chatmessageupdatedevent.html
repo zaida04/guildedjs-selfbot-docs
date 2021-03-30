@@ -71,9 +71,6 @@
 		<li class=" tsd-kind-module">
 			<a href="../modules/itami.html" class="tsd-kind-icon">itami</a>
 		</li>
-		<li class=" tsd-kind-module">
-			<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
-		</li>
 	</ul>
 </nav>
 <div class="container container-main">
@@ -130,7 +127,7 @@
 						<aside class="tsd-sources">
 							<p>Overrides <a href="guilded_js.event.html">Event</a>.<a href="guilded_js.event.html#constructor">constructor</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/ws/events/ChatMessageUpdated.ts#L6">packages/guilded.js/lib/ws/events/ChatMessageUpdated.ts:6</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/ws/events/ChatMessageUpdated.ts#L8">packages/guilded.js/lib/ws/events/ChatMessageUpdated.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -153,7 +150,7 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.event.html">Event</a>.<a href="guilded_js.event.html#client">client</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/ws/events/Event.ts#L4">packages/guilded.js/lib/ws/events/Event.ts:4</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/ws/events/Event.ts#L4">packages/guilded.js/lib/ws/events/Event.ts:4</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -164,20 +161,20 @@
 				<a name="ingest" class="tsd-anchor"></a>
 				<h3>ingest</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<li class="tsd-signature tsd-kind-icon">ingest<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChatMessageUpdated</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">ingest<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WSChatMessageUpdated</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<p>Overrides <a href="guilded_js.event.html">Event</a>.<a href="guilded_js.event.html#ingest">ingest</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/ws/events/ChatMessageUpdated.ts#L10">packages/guilded.js/lib/ws/events/ChatMessageUpdated.ts:10</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/ws/events/ChatMessageUpdated.ts#L12">packages/guilded.js/lib/ws/events/ChatMessageUpdated.ts:12</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>data: <span class="tsd-signature-type">ChatMessageUpdated</span></h5>
+								<h5>data: <span class="tsd-signature-type">WSChatMessageUpdated</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -195,7 +192,7 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.event.html">Event</a>.<a href="guilded_js.event.html#partialenabled">partialEnabled</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/ws/events/Event.ts#L6">packages/guilded.js/lib/ws/events/Event.ts:6</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/ws/events/Event.ts#L6">packages/guilded.js/lib/ws/events/Event.ts:6</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -222,6 +219,9 @@
 					<ul class="tsd-legend">
 						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+					</ul>
+					<ul class="tsd-legend">
+						<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>

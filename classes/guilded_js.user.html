@@ -52,7 +52,7 @@
 				<li class="current tsd-kind-class tsd-parent-kind-module">
 					<a href="guilded_js.user.html" class="tsd-kind-icon">User</a>
 					<ul>
-						<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 							<a href="guilded_js.user.html#constructor" class="tsd-kind-icon">constructor</a>
 						</li>
 						<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -62,7 +62,7 @@
 							<a href="guilded_js.user.html#aliases" class="tsd-kind-icon">aliases</a>
 						</li>
 						<li class=" tsd-kind-property tsd-parent-kind-class">
-							<a href="guilded_js.user.html#avatarurls" class="tsd-kind-icon">avatarURLS</a>
+							<a href="guilded_js.user.html#avatarurls" class="tsd-kind-icon">avatarURLs</a>
 						</li>
 						<li class=" tsd-kind-property tsd-parent-kind-class">
 							<a href="guilded_js.user.html#banners" class="tsd-kind-icon">banners</a>
@@ -103,6 +103,9 @@
 						<li class=" tsd-kind-property tsd-parent-kind-class">
 							<a href="guilded_js.user.html#userstatus" class="tsd-kind-icon">user<wbr>Status</a>
 						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<a href="guilded_js.user.html#_clone" class="tsd-kind-icon">_clone</a>
+						</li>
 						<li class=" tsd-kind-method tsd-parent-kind-class">
 							<a href="guilded_js.user.html#avatarurl" class="tsd-kind-icon">avatarURL</a>
 						</li>
@@ -115,9 +118,6 @@
 		</li>
 		<li class=" tsd-kind-module">
 			<a href="../modules/itami.html" class="tsd-kind-icon">itami</a>
-		</li>
-		<li class=" tsd-kind-module">
-			<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
 		</li>
 	</ul>
 </nav>
@@ -145,10 +145,10 @@
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
-					<section class="tsd-index-section tsd-is-inherited">
+					<section class="tsd-index-section ">
 						<h3>Constructors</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.user.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="guilded_js.user.html#constructor" class="tsd-kind-icon">constructor</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -156,7 +156,7 @@
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#aboutinfo" class="tsd-kind-icon">about<wbr>Info</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#aliases" class="tsd-kind-icon">aliases</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#avatarurls" class="tsd-kind-icon">avatarURLS</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#avatarurls" class="tsd-kind-icon">avatarURLs</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#banners" class="tsd-kind-icon">banners</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.user.html#client" class="tsd-kind-icon">client</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#email" class="tsd-kind-icon">email</a></li>
@@ -175,6 +175,7 @@
 					<section class="tsd-index-section ">
 						<h3>Methods</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.user.html#_clone" class="tsd-kind-icon">_clone</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="guilded_js.user.html#avatarurl" class="tsd-kind-icon">avatarURL</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="guilded_js.user.html#bannerurl" class="tsd-kind-icon">bannerURL</a></li>
 						</ul>
@@ -182,20 +183,20 @@
 				</div>
 			</section>
 		</section>
-		<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Constructors</h2>
-			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
-				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>User<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="guilded_js.client.html" class="tsd-signature-type">Client</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIUser</span>, patch<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="guilded_js.user.html" class="tsd-signature-type">User</a></li>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>User<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="guilded_js.client.html" class="tsd-signature-type">Client</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIUser</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="guilded_js.user.html" class="tsd-signature-type">User</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#constructor">constructor</a></p>
+							<p>Overrides <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#constructor">constructor</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/Base.ts#L19">packages/guilded.js/lib/structures/Base.ts:19</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L82">packages/guilded.js/lib/structures/User.ts:82</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -205,9 +206,6 @@
 							</li>
 							<li>
 								<h5>data: <span class="tsd-signature-type">APIUser</span></h5>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> patch: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="guilded_js.user.html" class="tsd-signature-type">User</a></h4>
@@ -220,16 +218,27 @@
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 				<a name="aboutinfo" class="tsd-anchor"></a>
 				<h3>about<wbr>Info</h3>
-				<div class="tsd-signature tsd-kind-icon">about<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AboutInfo</span></div>
+				<div class="tsd-signature tsd-kind-icon">about<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>bio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>tagLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L9">packages/guilded.js/lib/structures/User.ts:9</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L10">packages/guilded.js/lib/structures/User.ts:10</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Addition info about this user</p>
 					</div>
+				</div>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter">
+							<h5>bio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>tag<wbr>Line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
@@ -238,7 +247,7 @@
 				<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIAlias</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L14">packages/guilded.js/lib/structures/User.ts:14</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L18">packages/guilded.js/lib/structures/User.ts:18</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -249,11 +258,11 @@
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 				<a name="avatarurls" class="tsd-anchor"></a>
-				<h3>avatarURLS</h3>
-				<div class="tsd-signature tsd-kind-icon">avatarURLS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>blur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>large<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>medium<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>small<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
+				<h3>avatarURLs</h3>
+				<div class="tsd-signature tsd-kind-icon">avatarURLs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>blur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>large<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>medium<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>small<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L53">packages/guilded.js/lib/structures/User.ts:53</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L57">packages/guilded.js/lib/structures/User.ts:57</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -285,7 +294,7 @@
 				<div class="tsd-signature tsd-kind-icon">banners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>blur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>large<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>small<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L44">packages/guilded.js/lib/structures/User.ts:44</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L48">packages/guilded.js/lib/structures/User.ts:48</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -315,7 +324,7 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#client">client</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/Base.ts#L21">packages/guilded.js/lib/structures/Base.ts:21</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/Base.ts#L20">packages/guilded.js/lib/structures/Base.ts:20</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -325,7 +334,7 @@
 				<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L19">packages/guilded.js/lib/structures/User.ts:19</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L23">packages/guilded.js/lib/structures/User.ts:23</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -341,7 +350,7 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#id">id</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/Base.ts#L14">packages/guilded.js/lib/structures/Base.ts:14</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/Base.ts#L13">packages/guilded.js/lib/structures/Base.ts:13</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -352,11 +361,11 @@
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 				<a name="joindate" class="tsd-anchor"></a>
-				<h3>join<wbr>Date</h3>
+				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> join<wbr>Date</h3>
 				<div class="tsd-signature tsd-kind-icon">join<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L24">packages/guilded.js/lib/structures/User.ts:24</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L28">packages/guilded.js/lib/structures/User.ts:28</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -371,7 +380,7 @@
 				<div class="tsd-signature tsd-kind-icon">last<wbr>Online<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L29">packages/guilded.js/lib/structures/User.ts:29</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L33">packages/guilded.js/lib/structures/User.ts:33</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -386,7 +395,7 @@
 				<div class="tsd-signature tsd-kind-icon">moderation<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L34">packages/guilded.js/lib/structures/User.ts:34</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L38">packages/guilded.js/lib/structures/User.ts:38</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -401,7 +410,7 @@
 				<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L39">packages/guilded.js/lib/structures/User.ts:39</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L43">packages/guilded.js/lib/structures/User.ts:43</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -417,7 +426,7 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#raw">raw</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/Base.ts#L19">packages/guilded.js/lib/structures/Base.ts:19</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/Base.ts#L18">packages/guilded.js/lib/structures/Base.ts:18</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -432,7 +441,7 @@
 				<div class="tsd-signature tsd-kind-icon">service<wbr>Email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L63">packages/guilded.js/lib/structures/User.ts:63</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L67">packages/guilded.js/lib/structures/User.ts:67</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -447,7 +456,7 @@
 				<div class="tsd-signature tsd-kind-icon">steamID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L68">packages/guilded.js/lib/structures/User.ts:68</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L72">packages/guilded.js/lib/structures/User.ts:72</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -462,7 +471,7 @@
 				<div class="tsd-signature tsd-kind-icon">subdomain<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L73">packages/guilded.js/lib/structures/User.ts:73</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L77">packages/guilded.js/lib/structures/User.ts:77</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -477,7 +486,7 @@
 				<div class="tsd-signature tsd-kind-icon">user<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIUserStatus</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L78">packages/guilded.js/lib/structures/User.ts:78</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L82">packages/guilded.js/lib/structures/User.ts:82</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -489,6 +498,30 @@
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<a name="_clone" class="tsd-anchor"></a>
+				<h3>_clone</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon">_clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#_clone">_clone</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/Base.ts#L35">packages/guilded.js/lib/structures/Base.ts:35</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Taken from <a href="https://github.com/discordjs/discord.js/blob/8e8d9b490a71de6cabe6f16375d7549a7c5c3737/src/structures/Base.js#L20">https://github.com/discordjs/discord.js/blob/8e8d9b490a71de6cabe6f16375d7549a7c5c3737/src/structures/Base.js#L20</a>
+								Licensed under the Apache License 2.0 <a href="https://github.com/discordjs/discord.js/blob/8e8d9b490a71de6cabe6f16375d7549a7c5c3737/LICENSE">https://github.com/discordjs/discord.js/blob/8e8d9b490a71de6cabe6f16375d7549a7c5c3737/LICENSE</a></p>
+							</div>
+						</div>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 				<a name="avatarurl" class="tsd-anchor"></a>
 				<h3>avatarURL</h3>
@@ -499,7 +532,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L137">packages/guilded.js/lib/structures/User.ts:137</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L174">packages/guilded.js/lib/structures/User.ts:174</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -527,7 +560,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4f0055a/packages/guilded.js/lib/structures/User.ts#L112">packages/guilded.js/lib/structures/User.ts:112</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/4aceaa1/packages/guilded.js/lib/structures/User.ts#L149">packages/guilded.js/lib/structures/User.ts:149</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -551,20 +584,24 @@
 				<h2>Legend</h2>
 				<div class="tsd-legend-group">
 					<ul class="tsd-legend">
+						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+						<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+						<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+						<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+					</ul>
+					<ul class="tsd-legend">
 						<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 						<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 						<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 					</ul>
 					<ul class="tsd-legend">
-						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-						<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-						<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-						<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 					</ul>
 					<ul class="tsd-legend">
-						<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+						<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
