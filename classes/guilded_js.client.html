@@ -250,7 +250,7 @@ client.login({
 						<aside class="tsd-sources">
 							<p>Overrides EventEmitter.__constructor</p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L81">packages/guilded.js/lib/structures/Client.ts:81</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L83">packages/guilded.js/lib/structures/Client.ts:83</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -271,6 +271,7 @@ client.login({
 				<h3>on</h3>
 				<ul class="tsd-signatures tsd-kind-event tsd-parent-kind-class tsd-is-inherited">
 					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageReactionAdd"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageCreate"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageUpdate"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>oldMessage<span class="tsd-signature-symbol">: </span><a href="guilded_js.message.html" class="tsd-signature-type">Message</a>, newMessage<span class="tsd-signature-symbol">: </span><a href="guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"disconnected"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
@@ -320,7 +321,51 @@ client.login({
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.client.html">Client</a>.<a href="guilded_js.client.html#on">on</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L166">packages/guilded.js/lib/structures/Client.ts:166</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L168">packages/guilded.js/lib/structures/Client.ts:168</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Fired when a reaction is added to a message</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">"messageReactionAdd"</span></h5>
+							</li>
+							<li>
+								<h5>listener: <span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>reaction: <a href="guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a></h5>
+													</li>
+													<li>
+														<h5>reacter: <a href="guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="guilded_js.client.html">Client</a>.<a href="guilded_js.client.html#on">on</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L174">packages/guilded.js/lib/structures/Client.ts:174</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -361,7 +406,7 @@ client.login({
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.client.html">Client</a>.<a href="guilded_js.client.html#on">on</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L171">packages/guilded.js/lib/structures/Client.ts:171</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L179">packages/guilded.js/lib/structures/Client.ts:179</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -405,7 +450,7 @@ client.login({
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.client.html">Client</a>.<a href="guilded_js.client.html#on">on</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L177">packages/guilded.js/lib/structures/Client.ts:177</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L185">packages/guilded.js/lib/structures/Client.ts:185</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -440,7 +485,7 @@ client.login({
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.client.html">Client</a>.<a href="guilded_js.client.html#on">on</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L183">packages/guilded.js/lib/structures/Client.ts:183</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L191">packages/guilded.js/lib/structures/Client.ts:191</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -475,7 +520,7 @@ client.login({
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.client.html">Client</a>.<a href="guilded_js.client.html#on">on</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L189">packages/guilded.js/lib/structures/Client.ts:189</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L197">packages/guilded.js/lib/structures/Client.ts:197</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -519,7 +564,7 @@ client.login({
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.client.html">Client</a>.<a href="guilded_js.client.html#on">on</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L195">packages/guilded.js/lib/structures/Client.ts:195</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L203">packages/guilded.js/lib/structures/Client.ts:203</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -560,7 +605,7 @@ client.login({
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.client.html">Client</a>.<a href="guilded_js.client.html#on">on</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L201">packages/guilded.js/lib/structures/Client.ts:201</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L209">packages/guilded.js/lib/structures/Client.ts:209</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -602,7 +647,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">cdn<span class="tsd-signature-symbol">:</span> <a href="guilded_js.restmanager.html" class="tsd-signature-type">RestManager</a><span class="tsd-signature-symbol"> = new RestManager({apiURL: this.options?.rest?.cdnURL ?? &quot;media.guilded.gg&quot;,})</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L43">packages/guilded.js/lib/structures/Client.ts:43</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L45">packages/guilded.js/lib/structures/Client.ts:45</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -617,7 +662,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">channels<span class="tsd-signature-symbol">:</span> <a href="guilded_js.channelmanager.html" class="tsd-signature-type">ChannelManager</a><span class="tsd-signature-symbol"> = new ChannelManager(this)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L75">packages/guilded.js/lib/structures/Client.ts:75</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L77">packages/guilded.js/lib/structures/Client.ts:77</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -636,7 +681,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">gateway<span class="tsd-signature-symbol">:</span> <a href="guilded_js.clientgatewayhandler.html" class="tsd-signature-type">ClientGatewayHandler</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L57">packages/guilded.js/lib/structures/Client.ts:57</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L59">packages/guilded.js/lib/structures/Client.ts:59</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -651,7 +696,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/guilded_js.clientoptions.html" class="tsd-signature-type">ClientOptions</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L84">packages/guilded.js/lib/structures/Client.ts:84</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L86">packages/guilded.js/lib/structures/Client.ts:86</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -661,7 +706,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">rest<span class="tsd-signature-symbol">:</span> <a href="guilded_js.restmanager.html" class="tsd-signature-type">RestManager</a><span class="tsd-signature-symbol"> = new RestManager({apiURL: this.options?.rest?.apiURL,})</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L35">packages/guilded.js/lib/structures/Client.ts:35</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L37">packages/guilded.js/lib/structures/Client.ts:37</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -676,7 +721,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">teams<span class="tsd-signature-symbol">:</span> <a href="guilded_js.teammanager.html" class="tsd-signature-type">TeamManager</a><span class="tsd-signature-symbol"> = new TeamManager(this)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L69">packages/guilded.js/lib/structures/Client.ts:69</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L71">packages/guilded.js/lib/structures/Client.ts:71</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -695,7 +740,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <a href="guilded_js.clientuser.html" class="tsd-signature-type">ClientUser</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L51">packages/guilded.js/lib/structures/Client.ts:51</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L53">packages/guilded.js/lib/structures/Client.ts:53</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -714,7 +759,7 @@ client.login({
 				<div class="tsd-signature tsd-kind-icon">users<span class="tsd-signature-symbol">:</span> <a href="guilded_js.usermanager.html" class="tsd-signature-type">UserManager</a><span class="tsd-signature-symbol"> = new UserManager(this)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L81">packages/guilded.js/lib/structures/Client.ts:81</a></li>
+						<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L83">packages/guilded.js/lib/structures/Client.ts:83</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -817,7 +862,7 @@ client.login({
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L138">packages/guilded.js/lib/structures/Client.ts:138</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L140">packages/guilded.js/lib/structures/Client.ts:140</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -959,7 +1004,7 @@ client.login({
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L97">packages/guilded.js/lib/structures/Client.ts:97</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L99">packages/guilded.js/lib/structures/Client.ts:99</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1288,7 +1333,7 @@ client.login({
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f9bf9ba/packages/guilded.js/lib/structures/Client.ts#L129">packages/guilded.js/lib/structures/Client.ts:129</a></li>
+								<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/514fc8e/packages/guilded.js/lib/structures/Client.ts#L131">packages/guilded.js/lib/structures/Client.ts:131</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
