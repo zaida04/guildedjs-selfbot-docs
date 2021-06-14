@@ -44,6 +44,9 @@
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-module">
+			<a href="modules/embeds.html" class="tsd-kind-icon">embeds</a>
+		</li>
+		<li class=" tsd-kind-module">
 			<a href="modules/guilded_api_typings.html" class="tsd-kind-icon">guilded-<wbr>api-<wbr>typings</a>
 		</li>
 		<li class=" tsd-kind-module">
@@ -51,6 +54,9 @@
 		</li>
 		<li class=" tsd-kind-module">
 			<a href="modules/itami.html" class="tsd-kind-icon">itami</a>
+		</li>
+		<li class=" tsd-kind-module">
+			<a href="modules/webhook_client.html" class="tsd-kind-icon">webhook-<wbr>client</a>
 		</li>
 	</ul>
 </nav>
@@ -76,27 +82,23 @@
 					<a href="https://npmjs.org/package/@guildedjs/guilded.js"><img src="https://nodei.co/npm/@guildedjs/guilded.js.png" alt="NPM"></a>
 				</p>
 			</div>
-			<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
-				<h2>Table of Contents</h2>
+			<a href="#about" id="about" style="color: inherit; text-decoration: none;">
+				<h2>About</h2>
+			</a>
+			<p>This repo serves as a monorepo that houses several packages, mainly the <code>@guildedjs/guilded.js</code> package, which is a library for the Guilded API. Inspired heavily by <a href="https://github.com/discordjs/discord.js">discord.js</a></p>
+			<a href="#packages" id="packages" style="color: inherit; text-decoration: none;">
+				<h2>Packages</h2>
 			</a>
 			<ul>
-				<li><a href="#usage">Example Usage</a></li>
-				<li><a href="#about">About the Project</a></li>
-				<li><a href="#packages">Packages</a></li>
-				<li><a href="#getting-started">Getting Started</a><ul>
-						<li><a href="#prerequisites">Prerequisites</a></li>
-						<li><a href="#installation">Installation</a></li>
-						<li><a href="#documentation">Documentation</a></li>
-					</ul>
-				</li>
-				<li><a href="#contributing">Contributing</a></li>
-				<li><a href="#LICENSING">License</a></li>
+				<li><code>@guildedjs/guilded.js</code> (<a href="https://github.com/zaida04/guilded.js/tree/main/packages/guilded.js#readme">Github</a>, <a href="https://www.npmjs.com/package/@guildedjs/guilded.js">NPM</a>) - main package that provides a lib for the guilded.gg api. Comes with built in caching, structures, etc.</li>
+				<li><code>@guildedjs/guilded-api-types</code> (<a href="https://github.com/zaida04/guilded.js/tree/main/packages/guilded-api-typings#readme">GitHub</a>, <a href="https://www.npmjs.com/package/@guildedjs/guilded-api-typings">NPM</a>) - thinking of making your own guilded lib/wrapper? This package consists of typings for the guilded.gg api compiled together by the community. No need to write your own typings and reinventing the wheel.</li>
+				<li><code>@guildedjs/embeds</code> (<a href="https://github.com/zaida04/guilded.js/tree/main/packages/embeds#readme">GitHub</a>, <a href="https://www.npmjs.com/package/@guildedjs/embeds">NPM</a>) - Library-agnostic embed builder for sending messages with rich content through the guilded.gg API.</li>
+				<li><code>@guildedjs/itami</code> (<a href="https://github.com/zaida04/guilded.js/tree/main/packages/itami#readme">GitHub</a>) - official framework for @guildedjs/guilded.js, comes with highly customizable commands, listeners, and other abstractions.</li>
 			</ul>
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h2>Usage</h2>
 			</a>
-			<pre><code class="language-ts"><span class="hljs-comment">// commonJS:</span>
-<span class="hljs-keyword">const</span> { Client } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;@guildedjs/guilded.js&quot;</span>);
+			<pre><code class="language-ts"><span class="hljs-keyword">const</span> { Client } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;@guildedjs/guilded.js&quot;</span>);
 
 <span class="hljs-comment">/*
  * ES6:
@@ -117,51 +119,25 @@ client.login({
     <span class="hljs-attr">email</span>: <span class="hljs-string">&quot;email&quot;</span>,
     <span class="hljs-attr">password</span>: <span class="hljs-string">&quot;password&quot;</span>
 });</code></pre>
-			<!--ABOUT THE PROJECT-->
-			<a href="#about" id="about" style="color: inherit; text-decoration: none;">
-				<h2>About</h2>
-			</a>
-			<p>This repo serves as a monorepo that houses several packages, mainly the <code>@guildedjs/guilded.js</code> package, which is a library for the Guilded API. Inspired heavily by <a href="https://github.com/discordjs/discord.js">discord.js</a></p>
-			<!--EMD OF ABOUT THE PROJECT>
-
-<!--GETTING STARTED-->
-			<a href="#packages" id="packages" style="color: inherit; text-decoration: none;">
-				<h2>Packages</h2>
-			</a>
-			<ul>
-				<li><a href="https://github.com/zaida04/guilded.js/tree/main/packages/guilded.js#readme"><code>@guildedjs/guilded.js</code></a> - main package that provides a lib for the guilded.gg api. Comes with built in caching, structures, etc.</li>
-				<li><a href="https://github.com/zaida04/guilded.js/tree/main/packages/itami#readme"><code>@guildedjs/itami</code></a> - official framework for <code>@guildedjs/guilded.js</code>, comes with highly customizable commands, listeners, and other abstractions.</li>
-				<li><a href="https://github.com/zaida04/guilded.js/tree/main/packages/guilded-api-typings#readme"><code>@guildedjs/guilded-api-types</code></a> - thinking of making your own guilded lib/wrapper? This package consists of typings for the guilded.gg api compiled together by the community. No need to write your own typings and reinventing the wheel.</li>
-			</ul>
-			<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
-				<h2>Getting Started</h2>
-			</a>
-			<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
-				<h3>Examples</h3>
-			</a>
-			<p>You can find example projects <a href="https://github.com/zaida04/guilded.js/tree/main/examples">here</a></p>
-			<a href="#prerequisites" id="prerequisites" style="color: inherit; text-decoration: none;">
-				<h3>Prerequisites</h3>
-			</a>
-			<p>You are expected to have a reasonably supported version of node.js. Guildedjs is tested on node.js &gt;12.0.0 and we make no guarantees that it will work on earlier versions</p>
 			<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-				<h3>Installation</h3>
+				<h2>Installation</h2>
 			</a>
+			<p><strong>Recommended that you use node v12+</strong></p>
 			<ul>
 				<li><code>npm install @guildedjs/guilded.js</code>  </li>
 				<li><code>yarn add @guildedjs/guilded.js</code></li>
 			</ul>
 			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-				<h3>Documentation</h3>
+				<h2>Documentation</h2>
 			</a>
 			<p>Documentation is viewable here: <a href="https://guilded.js.org">https://guilded.js.org</a></p>
 			<!--END GETTING STARTED-->
 			<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
 				<h2>Contributing</h2>
 			</a>
-			<p>Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are <strong>greatly appreciated</strong>.
-			As you start to contribute your beginner workflow should look similar to this:<br><code>fork repo &amp; clone repo</code> -&gt;  <code>npm install</code> -&gt; <code>npm run bootstrap</code> -&gt; <code>create new branch</code> -&gt; <code>your code changes</code> -&gt; <code>npm run build</code> -&gt; <code>npm run lint</code> -&gt; <code>commit, push, PR</code></p>
-			<p><strong>Please ensure your commits pass the test, lint, and build scripts.</strong></p>
+			<p>Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are <strong>greatly appreciated</strong>.</p>
+			<p><strong>Please run <code>npm run bootstrap</code> after running npm install in your local environment.</strong>
+			<strong>Please ensure your commits pass the test, lint, and build scripts.</strong></p>
 			<p><strong>We make use of <a href="https://lerna.js.org/">lerna</a> to manage our monorepo. The main commands used are below</strong></p>
 			<ul>
 				<li><code>lerna add &lt;module&gt; [--scope=package-name]</code> - add npm module dependency to all/specific package(s)</li>
@@ -187,9 +163,11 @@ client.login({
 					<section class="tsd-index-section ">
 						<h3>Modules</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-module"><a href="modules/embeds.html" class="tsd-kind-icon">embeds</a></li>
 							<li class="tsd-kind-module"><a href="modules/guilded_api_typings.html" class="tsd-kind-icon">guilded-<wbr>api-<wbr>typings</a></li>
 							<li class="tsd-kind-module"><a href="modules/guilded_js.html" class="tsd-kind-icon">guilded.js</a></li>
 							<li class="tsd-kind-module"><a href="modules/itami.html" class="tsd-kind-icon">itami</a></li>
+							<li class="tsd-kind-module"><a href="modules/webhook_client.html" class="tsd-kind-icon">webhook-<wbr>client</a></li>
 						</ul>
 					</section>
 				</div>
