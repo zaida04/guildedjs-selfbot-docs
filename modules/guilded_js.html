@@ -202,6 +202,15 @@
 				<li class=" tsd-kind-function tsd-parent-kind-module">
 					<a href="guilded_js.html#extractfromcookiejar" class="tsd-kind-icon">extract<wbr>From<wbr>Cookie<wbr>Jar</a>
 				</li>
+				<li class=" tsd-kind-function tsd-parent-kind-module">
+					<a href="guilded_js.html#retrievechannelfromstructurecache" class="tsd-kind-icon">retrieve<wbr>Channel<wbr>From<wbr>Structure<wbr>Cache</a>
+				</li>
+				<li class=" tsd-kind-function tsd-parent-kind-module">
+					<a href="guilded_js.html#retrievecreatorfromstructurecache" class="tsd-kind-icon">retrieve<wbr>Creator<wbr>From<wbr>Structure<wbr>Cache</a>
+				</li>
+				<li class=" tsd-kind-function tsd-parent-kind-module">
+					<a href="guilded_js.html#retrieveteamfromstructurecache" class="tsd-kind-icon">retrieve<wbr>Team<wbr>From<wbr>Structure<wbr>Cache</a>
+				</li>
 			</ul>
 		</li>
 		<li class=" tsd-kind-module">
@@ -290,6 +299,9 @@
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-function tsd-parent-kind-module"><a href="guilded_js.html#extractfromcookiejar" class="tsd-kind-icon">extract<wbr>From<wbr>Cookie<wbr>Jar</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="guilded_js.html#retrievechannelfromstructurecache" class="tsd-kind-icon">retrieve<wbr>Channel<wbr>From<wbr>Structure<wbr>Cache</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="guilded_js.html#retrievecreatorfromstructurecache" class="tsd-kind-icon">retrieve<wbr>Creator<wbr>From<wbr>Structure<wbr>Cache</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="guilded_js.html#retrieveteamfromstructurecache" class="tsd-kind-icon">retrieve<wbr>Team<wbr>From<wbr>Structure<wbr>Cache</a></li>
 						</ul>
 					</section>
 				</div>
@@ -303,7 +315,7 @@
 				<div class="tsd-signature tsd-kind-icon">JSONB<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/6c0b4b6/packages/guilded.js/lib/rest/RestManager.ts#L173">packages/guilded.js/lib/rest/RestManager.ts:173</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/13c0f92/packages/guilded.js/lib/rest/RestManager.ts#L173">packages/guilded.js/lib/rest/RestManager.ts:173</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -313,7 +325,7 @@
 				<div class="tsd-signature tsd-kind-icon">client<wbr>Partial<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"MEMBER"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"MESSAGE"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"USER"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"CHANNEL"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/6c0b4b6/packages/guilded.js/lib/structures/Client.ts#L221">packages/guilded.js/lib/structures/Client.ts:221</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/13c0f92/packages/guilded.js/lib/structures/Client.ts#L221">packages/guilded.js/lib/structures/Client.ts:221</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -330,7 +342,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/6c0b4b6/packages/guilded.js/lib/util.ts#L1">packages/guilded.js/lib/util.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/13c0f92/packages/guilded.js/lib/util.ts#L3">packages/guilded.js/lib/util.ts:3</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -343,6 +355,108 @@
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="retrievechannelfromstructurecache" class="tsd-anchor"></a>
+				<h3>retrieve<wbr>Channel<wbr>From<wbr>Structure<wbr>Cache</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">retrieve<wbr>Channel<wbr>From<wbr>Structure<wbr>Cache<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>_channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.partialchannel.html" class="tsd-signature-type">PartialChannel</a><span class="tsd-signature-symbol">; </span>channelID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.partialchannel.html" class="tsd-signature-type">PartialChannel</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/13c0f92/packages/guilded.js/lib/util.ts#L21">packages/guilded.js/lib/util.ts:21</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>_channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.partialchannel.html" class="tsd-signature-type">PartialChannel</a><span class="tsd-signature-symbol">; </span>channelID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>_channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.partialchannel.html" class="tsd-signature-type">PartialChannel</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>channelID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../classes/guilded_js.partialchannel.html" class="tsd-signature-type">PartialChannel</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="retrievecreatorfromstructurecache" class="tsd-anchor"></a>
+				<h3>retrieve<wbr>Creator<wbr>From<wbr>Structure<wbr>Cache</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">retrieve<wbr>Creator<wbr>From<wbr>Structure<wbr>Cache<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>_createdBy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">; </span>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">; </span>createdByID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/13c0f92/packages/guilded.js/lib/util.ts#L36">packages/guilded.js/lib/util.ts:36</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>_createdBy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">; </span>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">; </span>createdByID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>_created<wbr>By<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>created<wbr>ByID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="retrieveteamfromstructurecache" class="tsd-anchor"></a>
+				<h3>retrieve<wbr>Team<wbr>From<wbr>Structure<wbr>Cache</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">retrieve<wbr>Team<wbr>From<wbr>Structure<wbr>Cache<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>_team<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.team.html" class="tsd-signature-type">Team</a><span class="tsd-signature-symbol">; </span>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">; </span>teamID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.team.html" class="tsd-signature-type">Team</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/13c0f92/packages/guilded.js/lib/util.ts#L6">packages/guilded.js/lib/util.ts:6</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>_team<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.team.html" class="tsd-signature-type">Team</a><span class="tsd-signature-symbol">; </span>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">; </span>teamID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>_team<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/guilded_js.team.html" class="tsd-signature-type">Team</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>client<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.client.html" class="tsd-signature-type">Client</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>teamID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../classes/guilded_js.team.html" class="tsd-signature-type">Team</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 					</li>
 				</ul>
 			</section>
