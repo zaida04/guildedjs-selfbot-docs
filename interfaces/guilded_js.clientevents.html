@@ -69,6 +69,9 @@
 			<a href="../modules/itami.html" class="tsd-kind-icon">itami</a>
 		</li>
 		<li class=" tsd-kind-module">
+			<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
+		</li>
+		<li class=" tsd-kind-module">
 			<a href="../modules/webhook_client.html" class="tsd-kind-icon">webhook-<wbr>client</a>
 		</li>
 	</ul>
@@ -108,21 +111,21 @@
 				<a name="on" class="tsd-anchor"></a>
 				<h3>on</h3>
 				<ul class="tsd-signatures tsd-kind-event tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageReactionDelete"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, remover<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageReactionAdd"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageCreate"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageUpdate"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>oldMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a>, newMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"disconnected"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"ready"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"raw"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>event_name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, event_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"debug"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"reconnecting"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageReactionDelete"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, remover<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageReactionAdd"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageCreate"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"messageUpdate"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>oldMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a>, newMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"disconnected"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"ready"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"raw"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>event_name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, event_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"debug"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"reconnecting"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L178">packages/guilded.js/lib/structures/Client.ts:178</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L252">packages/guilded.js/lib/structures/Client.ts:252</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -136,11 +139,11 @@
 								<h5>event: <span class="tsd-signature-type">"messageReactionDelete"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, remover<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, remover<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, remover<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, remover<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
@@ -153,7 +156,7 @@
 														<h5>remover: <a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
@@ -165,7 +168,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L184">packages/guilded.js/lib/structures/Client.ts:184</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L258">packages/guilded.js/lib/structures/Client.ts:258</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -179,11 +182,11 @@
 								<h5>event: <span class="tsd-signature-type">"messageReactionAdd"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>reaction<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.messagereaction.html" class="tsd-signature-type">MessageReaction</a>, reacter<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
@@ -196,7 +199,7 @@
 														<h5>reacter: <a href="../classes/guilded_js.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
@@ -208,7 +211,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L190">packages/guilded.js/lib/structures/Client.ts:190</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L264">packages/guilded.js/lib/structures/Client.ts:264</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -222,11 +225,11 @@
 								<h5>event: <span class="tsd-signature-type">"messageCreate"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
@@ -236,7 +239,7 @@
 														<h5>message: <a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
@@ -248,7 +251,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L196">packages/guilded.js/lib/structures/Client.ts:196</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L270">packages/guilded.js/lib/structures/Client.ts:270</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -262,11 +265,11 @@
 								<h5>event: <span class="tsd-signature-type">"messageUpdate"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span>oldMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a>, newMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span>oldMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a>, newMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>oldMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a>, newMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>oldMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a>, newMessage<span class="tsd-signature-symbol">: </span><a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
@@ -279,7 +282,7 @@
 														<h5>newMessage: <a href="../classes/guilded_js.message.html" class="tsd-signature-type">Message</a></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
@@ -291,7 +294,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L202">packages/guilded.js/lib/structures/Client.ts:202</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L276">packages/guilded.js/lib/structures/Client.ts:276</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -305,15 +308,15 @@
 								<h5>event: <span class="tsd-signature-type">"disconnected"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
@@ -325,7 +328,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L208">packages/guilded.js/lib/structures/Client.ts:208</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L282">packages/guilded.js/lib/structures/Client.ts:282</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -339,15 +342,15 @@
 								<h5>event: <span class="tsd-signature-type">"ready"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
@@ -359,7 +362,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L214">packages/guilded.js/lib/structures/Client.ts:214</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L288">packages/guilded.js/lib/structures/Client.ts:288</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -373,11 +376,11 @@
 								<h5>event: <span class="tsd-signature-type">"raw"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span>event_name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, event_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span>event_name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, event_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event_name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, event_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event_name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, event_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
@@ -387,10 +390,10 @@
 														<h5>event_name: <span class="tsd-signature-type">string</span></h5>
 													</li>
 													<li>
-														<h5>event_data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+														<h5>event_data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
@@ -402,7 +405,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L220">packages/guilded.js/lib/structures/Client.ts:220</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L294">packages/guilded.js/lib/structures/Client.ts:294</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -416,21 +419,21 @@
 								<h5>event: <span class="tsd-signature-type">"debug"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
 												<h4 class="tsd-parameters-title">Parameters</h4>
 												<ul class="tsd-parameters">
 													<li>
-														<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span></h5>
 													</li>
 												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
@@ -442,7 +445,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/ccb8086/packages/guilded.js/lib/structures/Client.ts#L226">packages/guilded.js/lib/structures/Client.ts:226</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/8141d71/packages/guilded.js/lib/structures/Client.ts#L300">packages/guilded.js/lib/structures/Client.ts:300</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -456,15 +459,15 @@
 								<h5>event: <span class="tsd-signature-type">"reconnecting"</span></h5>
 							</li>
 							<li>
-								<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 											</li>
 										</ul>
 									</li>
