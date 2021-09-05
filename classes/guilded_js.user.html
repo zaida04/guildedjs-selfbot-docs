@@ -77,6 +77,9 @@
 							<a href="guilded_js.user.html#client" class="tsd-kind-icon">client</a>
 						</li>
 						<li class=" tsd-kind-property tsd-parent-kind-class">
+							<a href="guilded_js.user.html#dmchannel" class="tsd-kind-icon">dm<wbr>Channel</a>
+						</li>
+						<li class=" tsd-kind-property tsd-parent-kind-class">
 							<a href="guilded_js.user.html#email" class="tsd-kind-icon">email</a>
 						</li>
 						<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -117,6 +120,12 @@
 						</li>
 						<li class=" tsd-kind-method tsd-parent-kind-class">
 							<a href="guilded_js.user.html#bannerurl" class="tsd-kind-icon">bannerURL</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="guilded_js.user.html#fetchdmchannel" class="tsd-kind-icon">fetchDMChannel</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="guilded_js.user.html#send" class="tsd-kind-icon">send</a>
 						</li>
 					</ul>
 				</li>
@@ -175,6 +184,7 @@
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#avatarurls" class="tsd-kind-icon">avatarURLs</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#banners" class="tsd-kind-icon">banners</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.user.html#client" class="tsd-kind-icon">client</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#dmchannel" class="tsd-kind-icon">dm<wbr>Channel</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#email" class="tsd-kind-icon">email</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.user.html#id" class="tsd-kind-icon">id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_js.user.html#joindate" class="tsd-kind-icon">join<wbr>Date</a></li>
@@ -194,6 +204,8 @@
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="guilded_js.user.html#_clone" class="tsd-kind-icon">_clone</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="guilded_js.user.html#avatarurl" class="tsd-kind-icon">avatarURL</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="guilded_js.user.html#bannerurl" class="tsd-kind-icon">bannerURL</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="guilded_js.user.html#fetchdmchannel" class="tsd-kind-icon">fetchDMChannel</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="guilded_js.user.html#send" class="tsd-kind-icon">send</a></li>
 						</ul>
 					</section>
 				</div>
@@ -212,7 +224,7 @@
 						<aside class="tsd-sources">
 							<p>Overrides <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#constructor">constructor</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L85">packages/guilded.js/lib/structures/User.ts:85</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L92">packages/guilded.js/lib/structures/User.ts:92</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -237,7 +249,7 @@
 				<div class="tsd-signature tsd-kind-icon">about<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>bio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>tagLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L13">packages/guilded.js/lib/structures/User.ts:13</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L15">packages/guilded.js/lib/structures/User.ts:15</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -263,7 +275,7 @@
 				<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIAlias</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L21">packages/guilded.js/lib/structures/User.ts:21</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L23">packages/guilded.js/lib/structures/User.ts:23</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -278,7 +290,7 @@
 				<div class="tsd-signature tsd-kind-icon">avatarURLs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>blur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>large<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>medium<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>small<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L60">packages/guilded.js/lib/structures/User.ts:60</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L62">packages/guilded.js/lib/structures/User.ts:62</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -310,7 +322,7 @@
 				<div class="tsd-signature tsd-kind-icon">banners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>blur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>large<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>small<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L51">packages/guilded.js/lib/structures/User.ts:51</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L53">packages/guilded.js/lib/structures/User.ts:53</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -340,9 +352,24 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#client">client</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/Base.ts#L20">packages/guilded.js/lib/structures/Base.ts:20</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/Base.ts#L20">packages/guilded.js/lib/structures/Base.ts:20</a></li>
 					</ul>
 				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="dmchannel" class="tsd-anchor"></a>
+				<h3>dm<wbr>Channel</h3>
+				<div class="tsd-signature tsd-kind-icon">dm<wbr>Channel<span class="tsd-signature-symbol">:</span> <a href="guilded_js.dmchannel.html" class="tsd-signature-type">DMChannel</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L92">packages/guilded.js/lib/structures/User.ts:92</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>DMChannel associated with this user, if cached.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 				<a name="email" class="tsd-anchor"></a>
@@ -350,7 +377,7 @@
 				<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L26">packages/guilded.js/lib/structures/User.ts:26</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L28">packages/guilded.js/lib/structures/User.ts:28</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -366,7 +393,7 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#id">id</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/Base.ts#L13">packages/guilded.js/lib/structures/Base.ts:13</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/Base.ts#L13">packages/guilded.js/lib/structures/Base.ts:13</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -381,7 +408,7 @@
 				<div class="tsd-signature tsd-kind-icon">join<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L31">packages/guilded.js/lib/structures/User.ts:31</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L33">packages/guilded.js/lib/structures/User.ts:33</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -396,7 +423,7 @@
 				<div class="tsd-signature tsd-kind-icon">last<wbr>Online<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L36">packages/guilded.js/lib/structures/User.ts:36</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L38">packages/guilded.js/lib/structures/User.ts:38</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -411,7 +438,7 @@
 				<div class="tsd-signature tsd-kind-icon">moderation<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L41">packages/guilded.js/lib/structures/User.ts:41</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L43">packages/guilded.js/lib/structures/User.ts:43</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -426,7 +453,7 @@
 				<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L46">packages/guilded.js/lib/structures/User.ts:46</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L48">packages/guilded.js/lib/structures/User.ts:48</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -442,7 +469,7 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#raw">raw</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/Base.ts#L18">packages/guilded.js/lib/structures/Base.ts:18</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/Base.ts#L18">packages/guilded.js/lib/structures/Base.ts:18</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -457,7 +484,7 @@
 				<div class="tsd-signature tsd-kind-icon">service<wbr>Email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L70">packages/guilded.js/lib/structures/User.ts:70</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L72">packages/guilded.js/lib/structures/User.ts:72</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -472,7 +499,7 @@
 				<div class="tsd-signature tsd-kind-icon">steamID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L75">packages/guilded.js/lib/structures/User.ts:75</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L77">packages/guilded.js/lib/structures/User.ts:77</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -487,7 +514,7 @@
 				<div class="tsd-signature tsd-kind-icon">subdomain<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L80">packages/guilded.js/lib/structures/User.ts:80</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L82">packages/guilded.js/lib/structures/User.ts:82</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -502,7 +529,7 @@
 				<div class="tsd-signature tsd-kind-icon">user<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIUserStatus</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L85">packages/guilded.js/lib/structures/User.ts:85</a></li>
+						<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L87">packages/guilded.js/lib/structures/User.ts:87</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -525,7 +552,7 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="guilded_js.base.html">Base</a>.<a href="guilded_js.base.html#_clone">_clone</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/Base.ts#L35">packages/guilded.js/lib/structures/Base.ts:35</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/Base.ts#L35">packages/guilded.js/lib/structures/Base.ts:35</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -548,7 +575,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L177">packages/guilded.js/lib/structures/User.ts:177</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L185">packages/guilded.js/lib/structures/User.ts:185</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -576,7 +603,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/0127597/packages/guilded.js/lib/structures/User.ts#L152">packages/guilded.js/lib/structures/User.ts:152</a></li>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L160">packages/guilded.js/lib/structures/User.ts:160</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -591,6 +618,60 @@
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="fetchdmchannel" class="tsd-anchor"></a>
+				<h3>fetchDMChannel</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">fetchDMChannel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L211">packages/guilded.js/lib/structures/User.ts:211</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="send" class="tsd-anchor"></a>
+				<h3>send</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Embed</span>, embed<span class="tsd-signature-symbol">?: </span><a href="embeds.embed.html" class="tsd-signature-type">Embed</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/e95185d/packages/guilded.js/lib/structures/User.ts#L226">packages/guilded.js/lib/structures/User.ts:226</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Send a DM to this user.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Embed</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Either a string content or RichEmbed to send to this channel.</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> embed: <a href="embeds.embed.html" class="tsd-signature-type">Embed</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>A RichEmbed to send to this channel.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="guilded_js.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
